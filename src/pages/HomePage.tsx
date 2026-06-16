@@ -49,15 +49,22 @@ export default function HomePage() {
   return (
     <div className="min-h-full bg-gradient-to-br from-indigo-50 via-white to-slate-50">
       <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-12 sm:py-16">
-        <header className="flex items-center gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand text-white shadow-lg shadow-brand/30">
-            <ListTodo className="h-6 w-6" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              My Todos
-            </h1>
-            <p className="text-sm text-slate-500">Stay organized — saved locally in your browser.</p>
+        <header className="flex items-center gap-4">
+          <img
+            src="/images/Passport-Photo.jpg"
+            alt="Profile"
+            className="h-16 w-16 rounded-full object-cover ring-2 ring-brand/30 shadow-lg shadow-brand/20"
+          />
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand text-white shadow-lg shadow-brand/30">
+              <ListTodo className="h-6 w-6" />
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                My Todos
+              </h1>
+              <p className="text-sm text-slate-500">Stay organized — saved locally in your browser.</p>
+            </div>
           </div>
         </header>
 
